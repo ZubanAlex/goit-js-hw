@@ -1,10 +1,8 @@
 let cost;
 let name;
-const invalidContry = prompt('Веедите страну доставки');
+const inputContry = prompt('Веедите страну доставки');
 
-let message;
-
-switch (invalidContry.toLocaleLowerCase()) {
+switch (inputContry.toLocaleLowerCase()) {
   case 'китай':
     cost = 100;
     name = 'Китай';
@@ -34,12 +32,9 @@ switch (invalidContry.toLocaleLowerCase()) {
     alert('В вашей стране доставка не доступна');
 }
 
-if (invalidContry === null) {
-  message = 'Отменено пользователем!';
-} else if (name != undefined) {
-  message = `Доставка в ${name} будет стоить ${cost} кредитов`;
-} else {
-  message = '';
+if (inputContry === null) {
+  console.log('Отменено пользователем!');
 }
-
-console.log(message);
+if (name != undefined) {
+  console.log(`Доставка в ${name} будет стоить ${cost} кредитов`);
+}
