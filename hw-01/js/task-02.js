@@ -1,11 +1,8 @@
 const total = 100;
-const ordered = prompt('Укажите количество товар');
-let message;
+const ordered = 50;
 
-if (total == ordered || total > ordered) {
-  message = 'Заказ оформлен, с вами свяжется менеджер';
+if (total >= ordered) {
+  console.log('Заказ оформлен, с вами свяжется менеджер');
 } else {
-  message = 'На складе недостаточно твоаров!';
+  console.log('На складе недостаточно твоаров!');
 }
-
-console.log(message);
