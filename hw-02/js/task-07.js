@@ -14,6 +14,8 @@ do {
   numbers.push(input);
 } while (input !== null);
 
-if (sum(numbers) !== 0) {
+sum(numbers);
+
+if (total !== 0) {
   console.log(`Общая сумма чисел равна ${total}`);
 }
