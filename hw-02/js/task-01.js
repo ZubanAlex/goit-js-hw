@@ -16,7 +16,6 @@ users.push('Jay', 'Kiwi');
 console.log(users);
 
 users.splice(users.indexOf(userToDelete), 1);
-
 console.log(users);
 
 users.splice(users.indexOf(insertBefore), 0, userToInsert);

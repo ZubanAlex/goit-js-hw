@@ -1,15 +1,5 @@
 function formatString(string) {
-  let counterSymbol = 0;
-  string = Array.from(string);
-  for (let i = 0; i < string.length; i += 1) {
-    counterSymbol += 1;
-  }
-
-  if (counterSymbol >= 40) {
-    string.splice(40, string.length, '...');
-  }
-  string = string.join('');
-  return string;
+  return string.length <= 40 ? string : `${string.slice(0, 39)}... `;
 }
 
 console.log(formatString('Curabitur ligula sapien, tincidunt non.'));
