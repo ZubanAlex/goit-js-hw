@@ -8,7 +8,6 @@ do {
   }
   if (input !== null && Number(input) === Number(input)) {
     numbers.push(input);
-    console.log(numbers);
   }
 } while (input !== null);
 
